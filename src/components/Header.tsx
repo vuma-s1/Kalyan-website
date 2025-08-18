@@ -37,11 +37,11 @@ const Header = () => {
         {/* Card-style Navigation Bar */}
         <div className="relative bg-yellow-200/80 rounded-xl shadow-lg border border-yellow-400/30 backdrop-blur-sm">
           {/* Logo is now outside the flex container to not affect its height */}
-          <a href="#home" className="group">
+          <a href="#home" className={`group ${isMenuOpen ? 'lg:block hidden' : 'block'}`}>
             <img 
               src="/images/logo.png" 
               alt="AJKS Logo" 
-              className="absolute top-1/2 -translate-y-1/2 left-4 lg:left-8 w-20 h-20 lg:w-24 lg:h-24 object-contain hover:scale-105 transition-all duration-300"
+              className="absolute top-1/2 -translate-y-1/2 left-4 lg:left-8 w-20 h-20 lg:w-24 lg:h-24 object-contain hover:scale-105 transition-all duration-300 z-10"
               style={{ transform: 'translateY(-45%)' }}
             />
           </a>
@@ -89,7 +89,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Navigation Menu */}
-          <div className={`lg:hidden transition-all duration-500 overflow-hidden border-t border-yellow-400/30 ${
+          <div className={`lg:hidden transition-all duration-500 overflow-hidden border-t border-yellow-400/30 relative z-5 ${
             isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}>
             <nav className="py-4 px-6">
