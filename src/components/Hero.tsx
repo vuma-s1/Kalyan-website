@@ -10,12 +10,12 @@ const Hero = () => {
 
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="min-h-screen flex items-center pt-8">
+        <div className="min-h-screen flex items-center pt-32 lg:pt-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
             {/* Left Content */}
-            <div className="space-y-8 animate-fade-in pl-8 lg:pl-12">
+            <div className="space-y-8 animate-fade-in text-center lg:text-left lg:pl-12 pt-8 lg:pt-0">
               {/* Main heading */}
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
                 <span className="block text-yellow-200">15+ Years of</span>
                 <span className="block text-yellow-200">Transforming Retail</span>
                 <span className="block text-yellow-200">
@@ -29,7 +29,7 @@ const Hero = () => {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center lg:justify-start">
                 <button className="group px-8 py-4 text-white hover:bg-blue-700 transition-all duration-300 font-semibold tracking-wide rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 backdrop-blur-sm" style={{ backgroundColor: '#1e2531' }}>
                   <span className="flex items-center justify-center gap-3">
                     My Journey
@@ -46,11 +46,11 @@ const Hero = () => {
             </div>
 
             {/* Right Content - Portrait */}
-            <div className="relative animate-fade-in-up">
+            <div className="relative animate-fade-in-up flex justify-center lg:justify-start">
               {/* Portrait Container */}
-              <div className="relative">
+              <div className="relative lg:ml-24">
                 {/* Portrait Background */}
-                <div className="w-96 h-[28rem] mx-auto bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl shadow-2xl border-4 border-black relative overflow-hidden">
+                <div className="w-80 lg:w-96 h-72 lg:h-[28rem] mx-auto bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl shadow-2xl border-4 border-black relative overflow-hidden">
                   {/* Portrait Image */}
                   <img 
                     src="/images/kalyan.png" 

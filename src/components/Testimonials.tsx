@@ -26,7 +26,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-24 relative overflow-hidden" style={{ 
+    <section id="testimonials" className="py-8 lg:py-24 relative overflow-hidden" style={{ 
       backgroundImage: 'url(/images/bg-1.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -39,8 +39,8 @@ const Testimonials = () => {
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+        <div className="text-center mb-4 lg:mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
             What Others Say
           </h2>
           <p className="text-xl text-yellow-100 max-w-4xl mx-auto leading-relaxed" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
@@ -56,22 +56,22 @@ const Testimonials = () => {
               className="group bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-yellow-200 hover:bg-white hover:shadow-xl transition-all duration-500 hover:-translate-y-1 relative overflow-hidden"
               style={{ 
                 animationDelay: `${index * 0.15}s`,
-                padding: '1rem'
+                padding: '0.75rem'
               }}
             >
               {/* Quote Icon */}
-                              <div className="w-8 h-8 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-all duration-500 shadow-md" style={{ backgroundColor: '#1E2531' }}>
-                <BiSolidQuoteAltLeft className="w-4 h-4 text-white" />
+                              <div className="w-6 h-6 lg:w-8 lg:h-8 rounded-lg flex items-center justify-center mb-2 lg:mb-3 group-hover:scale-110 transition-all duration-500 shadow-md" style={{ backgroundColor: '#1E2531' }}>
+                <BiSolidQuoteAltLeft className="w-3 h-3 lg:w-4 lg:h-4 text-white" />
               </div>
               
               {/* Quote Text */}
-              <blockquote className="text-gray-800 leading-relaxed mb-3 italic text-sm" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+              <blockquote className="text-gray-800 leading-relaxed mb-2 lg:mb-3 italic text-xs lg:text-sm" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
                 "{testimonial.quote}"
               </blockquote>
               
               {/* Author Info */}
-              <div className="border-t border-yellow-200 pt-2">
-                <div className="font-bold text-yellow-700 mb-0.5 text-sm" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+              <div className="border-t border-yellow-200 pt-1 lg:pt-2">
+                <div className="font-bold text-yellow-700 mb-0 lg:mb-0.5 text-xs lg:text-sm" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
                   {testimonial.author}
                 </div>
                 <div className="text-gray-600 text-xs" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
@@ -86,9 +86,9 @@ const Testimonials = () => {
         </div>
 
         {/* Bottom Quote Icon */}
-        <div className="text-center mt-16">
-                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-full shadow-lg" style={{ backgroundColor: '#1E2531' }}>
-            <BiSolidQuoteAltRight className="w-8 h-8 text-white" />
+        <div className="text-center mt-8 lg:mt-16">
+                      <div className="inline-flex items-center justify-center w-12 h-12 lg:w-16 lg:h-16 rounded-full shadow-lg" style={{ backgroundColor: '#1E2531' }}>
+            <BiSolidQuoteAltRight className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
           </div>
         </div>
       </div>

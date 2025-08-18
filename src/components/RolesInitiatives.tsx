@@ -34,7 +34,7 @@ const RolesInitiatives = () => {
   ];
 
   return (
-    <section id="roles-initiatives" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#465826' }}>
+    <section id="roles-initiatives" className="py-8 lg:py-24 relative overflow-hidden" style={{ backgroundColor: '#465826' }}>
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 bg-paisley-pattern opacity-5"></div>
       <div className="absolute top-20 left-20 w-32 h-32 border border-yellow-400/30 rounded-full opacity-20 animate-float"></div>
@@ -42,39 +42,39 @@ const RolesInitiatives = () => {
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+        <div className="text-center mb-4 lg:mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
             Commitment Beyond Business
           </h2>
         </div>
 
         {/* Roles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {roles.map((role, index) => {
             const IconComponent = role.icon;
             return (
               <div 
                 key={index}
-                className="group bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-yellow-200 p-8 hover:bg-white hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
+                className="group bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-yellow-200 p-6 lg:p-8 hover:bg-white hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 {/* Icon */}
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#1E2531' }}>
-                  <IconComponent className="w-8 h-8 text-white" />
+                <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-2xl flex items-center justify-center mb-3 lg:mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#1E2531' }}>
+                  <IconComponent className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
                 </div>
                 
                 {/* Year Badge */}
-                <div className="inline-block px-3 py-1 text-white text-sm font-bold rounded-full mb-4 shadow-md" style={{ backgroundColor: '#1E2531' }}>
+                <div className="inline-block px-3 py-1 text-white text-sm font-bold rounded-full mb-2 lg:mb-4 shadow-md" style={{ backgroundColor: '#1E2531' }}>
                   {role.year}
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-800 mb-2" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                <h3 className="text-lg lg:text-2xl font-bold text-gray-800 mb-1 lg:mb-2" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
                   {role.title}
                 </h3>
                 
                 {/* Organization */}
-                <h4 className="text-lg font-semibold text-yellow-600 mb-3" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                <h4 className="text-sm lg:text-lg font-semibold text-yellow-600 mb-1 lg:mb-3" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
                   {role.organization}
                 </h4>
                 

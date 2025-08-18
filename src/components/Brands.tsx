@@ -14,18 +14,22 @@ const Brands = () => {
     {
       name: 'Mandir',
       logo: '/images/logo-3.png'
+    },
+    {
+      name: 'KLM Fashion Mall',
+      logo: '/images/logo-4.png'
     }
   ];
 
   return (
     <section id="brands" className="py-20 relative overflow-hidden" style={{ 
-      backgroundImage: 'url("/images/bg-1.png"), url("/images/bg-1.png")',
-      backgroundSize: 'contain, contain',
-      backgroundPosition: 'left top, right top',
-      backgroundRepeat: 'no-repeat, no-repeat'
+      backgroundImage: 'url(/images/bg-1.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
     }}>
       {/* Background Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -45,10 +49,10 @@ const Brands = () => {
             {brands.map((brand, index) => (
               <div 
                 key={`first-${index}`}
-                className="text-center flex-shrink-0 mx-8 min-w-[300px]"
+                className="text-center flex-shrink-0 mx-8 min-w-[250px] lg:min-w-[300px] group hover:scale-105 transition-all duration-300"
               >
                 {/* Brand Logo */}
-                <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center">
+                <div className="w-28 h-28 lg:w-32 lg:h-32 mx-auto mb-4 flex items-center justify-center">
                   <img 
                     src={brand.logo} 
                     alt={`${brand.name} logo`}
@@ -56,21 +60,21 @@ const Brands = () => {
                   />
                 </div>
                   
-                  {/* Brand Name */}
-                  <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
-                    {brand.name}
-                  </h3>
-                </div>
+                {/* Brand Name */}
+                <h3 className="text-lg lg:text-xl font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                  {brand.name}
+                </h3>
+              </div>
             ))}
             
             {/* Duplicate set for seamless loop */}
             {brands.map((brand, index) => (
               <div 
                 key={`second-${index}`}
-                className="text-center flex-shrink-0 mx-8 min-w-[300px]"
+                className="text-center flex-shrink-0 mx-8 min-w-[250px] lg:min-w-[300px] group hover:scale-105 transition-all duration-300"
               >
                 {/* Brand Logo */}
-                <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center">
+                <div className="w-28 h-28 lg:w-32 lg:h-32 mx-auto mb-4 flex items-center justify-center">
                   <img 
                     src={brand.logo} 
                     alt={`${brand.name} logo`}
@@ -78,11 +82,11 @@ const Brands = () => {
                   />
                 </div>
                   
-                  {/* Brand Name */}
-                  <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
-                    {brand.name}
-                  </h3>
-                </div>
+                {/* Brand Name */}
+                <h3 className="text-lg lg:text-xl font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                  {brand.name}
+                </h3>
+              </div>
             ))}
           </div>
         </div>

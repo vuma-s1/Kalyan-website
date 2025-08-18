@@ -34,7 +34,7 @@ const PhotoStrip = () => {
   }, [photos.length]);
 
   return (
-    <section className="py-20 relative overflow-hidden" style={{ 
+    <section className="py-6 lg:py-20 relative overflow-hidden" style={{ 
       backgroundImage: 'url("/images/herobg.png")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -44,8 +44,8 @@ const PhotoStrip = () => {
       <div className="absolute inset-0 bg-black/30"></div>
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+        <div className="text-center mb-2 lg:mb-16 animate-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
             In Action
           </h2>
           <p className="text-xl text-yellow-100 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>

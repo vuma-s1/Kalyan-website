@@ -9,16 +9,22 @@ const PersonalInsights = () => {
   ];
 
   return (
-    <section id="personal-insights" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#465826' }}>
-      {/* Decorative Background Elements */}
-      <div className="absolute inset-0 bg-paisley-pattern opacity-5"></div>
-      <div className="absolute top-20 left-20 w-32 h-32 border border-yellow-400/30 rounded-full opacity-20 animate-float"></div>
-      <div className="absolute bottom-20 right-20 w-24 h-24 border border-yellow-400/25 rounded-full opacity-15 animate-float" style={{ animationDelay: '1s' }}></div>
+    <section id="personal-insights" className="py-8 lg:py-24 relative overflow-hidden" style={{ backgroundColor: '#465826' }}>
+      {/* Background Image Overlay */}
+      <div className="absolute inset-0" style={{ 
+        backgroundImage: 'url("/images/bg-2.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        opacity: '0.3'
+      }}></div>
+      {/* Background Overlay for Text Readability */}
+      <div className="absolute inset-0 bg-black/20"></div>
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-8 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+        <div className="text-center mb-4 lg:mb-8 animate-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-4 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
             In His Own Words
           </h2>
           <p className="text-xl text-yellow-100 max-w-3xl mx-auto leading-relaxed drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>

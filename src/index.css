@@ -13,7 +13,14 @@
 }
 
 .animate-marquee {
-  animation: marquee 20s linear infinite;
+  animation: marquee 5s linear infinite;
+}
+
+/* Faster speed for mobile */
+@media (max-width: 768px) {
+  .animate-marquee {
+    animation: marquee 3s linear infinite;
+  }
 }
 
 /* Pause animation on hover */
@@ -46,6 +53,14 @@
 /* Hero Background */
 .hero-background {
   background-image: url('/images/herobg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Footer Background */
+.footer-background {
+  background-image: url('/images/footer bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

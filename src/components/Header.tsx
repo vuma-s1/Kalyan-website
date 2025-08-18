@@ -17,7 +17,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -31,22 +31,24 @@ const Header = () => {
     }
   };
 
-  return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 p-4">
-      <div className="container mx-auto px-4">
+    return (
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+      <div className="container mx-auto px-4 mt-4">
         {/* Card-style Navigation Bar */}
-        <div className="bg-yellow-200/80 rounded-xl shadow-lg border border-yellow-400/30 backdrop-blur-sm">
-          <div className="flex items-center justify-between px-6 py-4">
-            {/* Logo/Icon Only */}
-            <div className="flex-shrink-0">
-              <a href="#home" className="group">
-                <img 
-                  src="/images/logo.png" 
-                  alt="AJKS Logo" 
-                  className="w-16 h-16 object-contain hover:scale-105 transition-all duration-300"
-                />
-              </a>
-            </div>
+        <div className="relative bg-yellow-200/80 rounded-xl shadow-lg border border-yellow-400/30 backdrop-blur-sm">
+          {/* Logo is now outside the flex container to not affect its height */}
+          <a href="#home" className="group">
+            <img 
+              src="/images/logo.png" 
+              alt="AJKS Logo" 
+              className="absolute top-1/2 -translate-y-1/2 left-4 lg:left-8 w-20 h-20 lg:w-24 lg:h-24 object-contain hover:scale-105 transition-all duration-300"
+              style={{ transform: 'translateY(-45%)' }}
+            />
+          </a>
+
+          <div className="flex items-center justify-between px-8 py-3 pl-24 lg:pl-32">
+            {/* Logo Placeholder - This empty div maintains the space correctly in the flex layout */}
+            <div className="flex-shrink-0"></div>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-6">

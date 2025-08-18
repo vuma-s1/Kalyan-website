@@ -44,11 +44,11 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20" style={{ backgroundColor: '#fbe9b7' }}>
+    <section id="contact" className="py-8 lg:py-20" style={{ backgroundColor: '#fbe9b7' }}>
       <div className="container mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4 font-serif">
+        <div className="text-center mb-8 lg:mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-2 lg:mb-4 font-serif">
             Let's Connect
           </h2>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto">

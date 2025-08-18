@@ -21,7 +21,7 @@ const LeadershipAchievements = () => {
   ];
 
   return (
-    <section id="leadership-achievements" className="py-24 relative overflow-hidden" style={{ 
+    <section id="leadership-achievements" className="py-8 lg:py-24 relative overflow-hidden" style={{ 
       backgroundImage: 'url("/images/bg-1.png")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -32,8 +32,8 @@ const LeadershipAchievements = () => {
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+        <div className="text-center mb-8 lg:mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-3 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
             Turning Vision into Measurable Success
           </h2>
           <p className="text-xl text-yellow-100 max-w-3xl mx-auto drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
@@ -46,20 +46,20 @@ const LeadershipAchievements = () => {
           {achievements.map((achievement, index) => {
             const IconComponent = achievement.icon;
             return (
-              <div 
-                key={index}
-                className="group bg-white rounded-2xl shadow-xl border border-yellow-200 p-8 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                {/* Icon */}
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#1E2531' }}>
-                  <IconComponent className="w-10 h-10 text-white" />
-                </div>
-                
-                {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-800 mb-4" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
-                  {achievement.title}
-                </h3>
+                             <div 
+                 key={index}
+                 className="group bg-white rounded-2xl shadow-xl border border-yellow-200 p-6 lg:p-8 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
+                 style={{ animationDelay: `${index * 0.2}s` }}
+               >
+                 {/* Icon */}
+                 <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 lg:mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#1E2531' }}>
+                   <IconComponent className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
+                 </div>
+                 
+                 {/* Title */}
+                 <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-3 lg:mb-4" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                   {achievement.title}
+                 </h3>
                 
                 {/* Description */}
                 <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>

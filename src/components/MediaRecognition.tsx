@@ -24,7 +24,7 @@ const MediaRecognition = () => {
   ];
 
   return (
-    <section id="media-recognition" className="py-24 relative overflow-hidden" style={{ 
+    <section id="media-recognition" className="py-8 lg:py-24 relative overflow-hidden" style={{ 
       backgroundImage: 'url(/images/herobg.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -37,8 +37,8 @@ const MediaRecognition = () => {
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-8 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+        <div className="text-center mb-4 lg:mb-8 animate-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-4 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
             Recognised for My Work
           </h2>
           <p className="text-xl text-yellow-100 max-w-3xl mx-auto leading-relaxed drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
@@ -47,32 +47,32 @@ const MediaRecognition = () => {
         </div>
 
         {/* Recognition Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {recognitions.map((recognition, index) => {
             const IconComponent = recognition.icon;
             return (
               <div 
                 key={index}
-                className="group bg-white rounded-2xl shadow-xl border border-yellow-200 p-8 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
+                className="group bg-white rounded-2xl shadow-xl border border-yellow-200 p-4 lg:p-8 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 {/* Icon */}
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#1E2531' }}>
-                  <IconComponent className="w-10 h-10 text-white" />
+                <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center mx-auto mb-3 lg:mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#1E2531' }}>
+                  <IconComponent className="w-7 h-7 lg:w-10 lg:h-10 text-white" />
                 </div>
                 
                 {/* Year Badge */}
-                <div className="inline-block px-4 py-2 text-white text-sm font-bold rounded-full mb-4 shadow-md" style={{ backgroundColor: '#1E2531' }}>
+                <div className="inline-block px-2 py-1 lg:px-4 lg:py-2 text-white text-xs lg:text-sm font-bold rounded-full mb-2 lg:mb-4 shadow-md" style={{ backgroundColor: '#1E2531' }}>
                   {recognition.year}
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-800 mb-4" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                <h3 className="text-base lg:text-xl font-bold text-gray-800 mb-2 lg:mb-4" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
                   {recognition.title}
                 </h3>
                 
                 {/* Description */}
-                <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+                <p className="text-gray-700 leading-relaxed text-xs lg:text-base" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
                   {recognition.description}
                 </p>
 
