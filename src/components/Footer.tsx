@@ -6,8 +6,8 @@ const Footer = () => {
   const quickLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Professional Journey', href: '#professional-journey' },
-    { name: 'Leadership', href: '#leadership' },
+    { name: 'Achievements', href: '#leadership-achievements' },
+    { name: 'Roles', href: '#roles-initiatives' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -47,12 +47,11 @@ const Footer = () => {
                 </div>
               </div>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Leading Sai Silks (Kalamandir) Limited with vision, discipline, and impact. 
-                Transforming retail leadership through strategic innovation and cultural preservation.
+                Annam Kalyan Srinivas — Leading Sai Silks (Kalamandir) Limited with vision, discipline, and impact.
               </p>
               <div className="flex items-center space-x-4 text-sm text-gray-400">
-                <span>📞 +91 98480 12345</span>
-                <span>📧 kalyan@sskl.com</span>
+                <span>📞 +91 98855 21122</span>
+                <span>📧 kalyan@kalamandir.com</span>
               </div>
             </div>
 
@@ -98,7 +97,7 @@ const Footer = () => {
                 className="inline-flex items-center space-x-2 px-8 py-4 bg-yellow-500 text-gray-900 hover:bg-yellow-400 transition-all duration-300 font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <FiPhone className="w-5 h-5" />
-                <span>Book a Call</span>
+                <span>My Journey</span>
               </button>
             </div>
           </div>

@@ -2,12 +2,17 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Brands from './components/Brands';
-import AchievementStats from './components/AchievementStats';
-import CredibilityCards from './components/CredibilityCards';
+import LeadershipCredentials from './components/LeadershipCredentials';
 import About from './components/About';
-import ProfessionalServices from './components/ProfessionalServices';
-import ProfessionalJourney from './components/ProfessionalJourney';
-import Leadership from './components/Leadership';
+import PhotoStrip from './components/PhotoStrip';
+import LeadershipAchievements from './components/LeadershipAchievements';
+import VisionMission from './components/VisionMission';
+import RolesInitiatives from './components/RolesInitiatives';
+import CSRImpact from './components/CSRImpact';
+import Testimonials from './components/Testimonials';
+import WorkValues from './components/WorkValues';
+import PersonalInsights from './components/PersonalInsights';
+import MediaRecognition from './components/MediaRecognition';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -17,12 +22,17 @@ function App() {
       <Header />
       <Hero />
       <Brands />
-      <AchievementStats />
-      <CredibilityCards />
+      <LeadershipCredentials />
       <About />
-      <ProfessionalServices />
-      <ProfessionalJourney />
-      <Leadership />
+      <PhotoStrip />
+      <LeadershipAchievements />
+      <VisionMission />
+      <RolesInitiatives />
+      <CSRImpact />
+      <Testimonials />
+      <WorkValues />
+      <PersonalInsights />
+      <MediaRecognition />
       <Contact />
       <Footer />
     </div>

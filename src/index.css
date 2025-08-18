@@ -20,3 +20,33 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+/* Font Face Declaration */
+@font-face {
+  font-family: 'NautilusPompilius';
+  src: url('/fonts/Nautiluspompilius-X7JG.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FocusGrotesk';
+  src: url('/fonts/FocusGrotesk-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FocusGrotesk';
+  src: url('/fonts/FocusGrotesk-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Hero Background */
+.hero-background {
+  background-image: url('/images/herobg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

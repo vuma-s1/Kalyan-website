@@ -26,13 +26,13 @@ const Contact = () => {
     {
       icon: FiPhone,
       title: "Phone",
-      value: "+91 98480 12345",
+      value: "+91 98855 21122",
       description: "Direct line for urgent matters"
     },
     {
       icon: FiMail,
       title: "Email",
-      value: "kalyan@sskl.com",
+      value: "kalyan@kalamandir.com",
       description: "For detailed discussions"
     },
     {
@@ -44,7 +44,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20" style={{ backgroundColor: '#fbe9b7' }}>
       <div className="container mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -66,8 +66,8 @@ const Contact = () => {
                   key={index}
                   className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg border border-yellow-100 hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <IconComponent className="w-6 h-6 text-gray-900" />
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#1E2531' }}>
+                    <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-gray-800 mb-1">{method.title}</h4>
@@ -152,7 +152,8 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-yellow-500 text-gray-900 py-4 px-8 rounded-lg font-semibold hover:bg-yellow-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 uppercase tracking-wide"
+                  className="w-full text-white py-4 px-8 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 uppercase tracking-wide"
+                  style={{ backgroundColor: '#1E2531' }}
                 >
                   Send Message
                 </button>
