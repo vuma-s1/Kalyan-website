@@ -24,7 +24,7 @@ const PersonalInsights = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-4 lg:mb-8 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-4 drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+                      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-4 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed Italic, serif', letterSpacing: '0.05em' }}>
             In His Own Words
           </h2>
           <p className="text-xl text-yellow-100 max-w-3xl mx-auto leading-relaxed drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>

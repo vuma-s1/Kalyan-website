@@ -15,7 +15,7 @@ const Hero = () => {
             {/* Left Content */}
             <div className="space-y-8 animate-fade-in text-center lg:text-left lg:pl-12 pt-8 lg:pt-0">
               {/* Main heading */}
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight drop-shadow-lg" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed Italic, serif', letterSpacing: '0.05em' }}>
                 <span className="block text-yellow-200">15+ Years of</span>
                 <span className="block text-yellow-200">Transforming Retail</span>
                 <span className="block text-yellow-200">

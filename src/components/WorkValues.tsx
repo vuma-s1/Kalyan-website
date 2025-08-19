@@ -30,7 +30,7 @@ const WorkValues = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-4 lg:mb-8 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-2 lg:mb-4 drop-shadow-sm" style={{ fontFamily: 'NautilusPompilius, serif' }}>
+                                             <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-2 lg:mb-4 drop-shadow-sm" style={{ fontFamily: 'Komrile Condensed Italic, serif', letterSpacing: '0.05em' }}>
             Principles That Guide My Work
           </h2>
         </div>
