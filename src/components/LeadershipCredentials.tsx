@@ -42,7 +42,7 @@ const LeadershipCredentials = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-8 animate-fade-in">
-                      <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed Italic, serif', letterSpacing: '0.05em' }}>
+                      <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed, serif', letterSpacing: '0.05em' }}>
             <span style={{ color: '#1e2531' }}>Proven Leadership.</span>
             <span className="block" style={{ color: '#9b3534' }}>Measurable Impact.</span>
           </h2>

@@ -33,7 +33,7 @@ const LeadershipAchievements = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-8 lg:mb-16">
-                      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-3 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed Italic, serif', letterSpacing: '0.05em' }}>
+                      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-3 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed, serif', letterSpacing: '0.05em' }}>
             Turning Vision into Measurable Success
           </h2>
           <p className="text-xl text-yellow-100 max-w-3xl mx-auto drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>

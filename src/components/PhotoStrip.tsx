@@ -45,7 +45,7 @@ const PhotoStrip = () => {
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-2 lg:mb-16 animate-fade-in">
-                      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed Italic, serif', letterSpacing: '0.05em' }}>
+                      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed, serif', letterSpacing: '0.05em' }}>
             In Action
           </h2>
           <p className="text-xl text-yellow-100 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>

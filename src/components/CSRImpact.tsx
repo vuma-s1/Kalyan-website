@@ -41,7 +41,7 @@ const CSRImpact = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-4 lg:mb-16">
-                      <h2 className="text-2xl lg:text-5xl font-bold text-white mb-2 lg:mb-8 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed Italic, serif', letterSpacing: '0.05em' }}>
+                      <h2 className="text-2xl lg:text-5xl font-bold text-white mb-2 lg:mb-8 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed, serif', letterSpacing: '0.05em' }}>
             <span className="block">Creating Lasting Change Through</span>
             <span className="block">Kalamandir Foundation</span>
           </h2>
