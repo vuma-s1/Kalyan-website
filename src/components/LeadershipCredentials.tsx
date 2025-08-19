@@ -36,7 +36,7 @@ const LeadershipCredentials = () => {
   ];
 
   return (
-         <section id="leadership-credentials" className="py-12 lg:py-16 relative overflow-hidden" style={{ backgroundColor: '#fbe9b7' }}>
+         <section id="leadership-credentials" className="py-8 lg:py-24 relative overflow-hidden" style={{ backgroundColor: '#fbe9b7' }}>
 
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">

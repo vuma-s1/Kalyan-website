@@ -22,7 +22,7 @@ const Brands = () => {
   ];
 
   return (
-    <section id="brands" className="py-20 relative overflow-hidden" style={{ 
+    <section id="brands" className="py-6 relative overflow-hidden" style={{ 
       backgroundImage: 'url(/images/bg-1.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -52,7 +52,7 @@ const Brands = () => {
                 className="text-center flex-shrink-0 mx-4 lg:mx-8 min-w-[200px] sm:min-w-[250px] lg:min-w-[300px] group hover:scale-105 transition-all duration-300"
               >
                 {/* Brand Logo */}
-                <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto mb-4 flex items-center justify-center">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 mx-auto mb-3 flex items-center justify-center">
                   <img 
                     src={brand.logo} 
                     alt={`${brand.name} logo`}
@@ -61,7 +61,7 @@ const Brands = () => {
                 </div>
                   
                 {/* Brand Name */}
-                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                <h3 className="text-sm sm:text-base lg:text-lg font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
                   {brand.name}
                 </h3>
               </div>
@@ -74,7 +74,7 @@ const Brands = () => {
                 className="text-center flex-shrink-0 mx-4 lg:mx-8 min-w-[200px] sm:min-w-[250px] lg:min-w-[300px] group hover:scale-105 transition-all duration-300"
               >
                 {/* Brand Logo */}
-                <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto mb-4 flex items-center justify-center">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 mx-auto mb-3 flex items-center justify-center">
                   <img 
                     src={brand.logo} 
                     alt={`${brand.name} logo`}
@@ -83,7 +83,7 @@ const Brands = () => {
                 </div>
                   
                 {/* Brand Name */}
-                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                <h3 className="text-sm sm:text-base lg:text-lg font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
                   {brand.name}
                 </h3>
               </div>
