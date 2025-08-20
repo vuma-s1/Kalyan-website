@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 lg:py-24 relative overflow-hidden" style={{ 
+    <section id="about" className="pt-4 pb-16 lg:py-24 relative overflow-hidden" style={{ 
       backgroundColor: '#ffe5d4'
     }}>
 
