@@ -88,7 +88,7 @@ const GomathaSection = () => {
         {/* Project Kamadhenu */}
         <div className="max-w-6xl mx-auto mb-8 lg:mb-12 relative">
           {/* Left Corner Image */}
-          <div className="absolute -left-16 -top-24 lg:-left-48 lg:-top-64 w-40 h-56 lg:w-96 lg:h-112 z-10">
+          <div className="absolute -right-8 -top-24 lg:-right-64 lg:-top-96 w-40 h-56 z-10 lg:w-96 lg:h-96">
             <img 
               src="/images/14.png" 
               alt="Decorative corner" 
@@ -97,7 +97,7 @@ const GomathaSection = () => {
           </div>
           
           {/* Right Corner Image */}
-          <div className="absolute -right-16 -top-24 lg:-right-48 lg:-top-64 w-40 h-56 lg:w-96 lg:h-112 z-10">
+          <div className="absolute -left-8 -top-24 lg:-left-64 lg:-top-96 w-40 h-56 z-10 lg:w-96 lg:h-96">
             <img 
               src="/images/16.png" 
               alt="Decorative corner" 
