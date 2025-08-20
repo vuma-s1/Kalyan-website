@@ -11,6 +11,7 @@ import RolesInitiatives from './components/RolesInitiatives';
 import CSRImpact from './components/CSRImpact';
 import Testimonials from './components/Testimonials';
 import WorkValues from './components/WorkValues';
+import GomathaSection from './components/GomathaSection';
 import PersonalInsights from './components/PersonalInsights';
 import MediaRecognition from './components/MediaRecognition';
 import Contact from './components/Contact';
@@ -31,6 +32,7 @@ function App() {
       <CSRImpact />
       <Testimonials />
       <WorkValues />
+      <GomathaSection />
       <PersonalInsights />
       <MediaRecognition />
       <Contact />

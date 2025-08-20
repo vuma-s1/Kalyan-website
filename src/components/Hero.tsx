@@ -10,7 +10,7 @@ const Hero = () => {
 
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="min-h-screen flex items-center pt-32 lg:pt-20">
+        <div className="min-h-screen flex items-center pt-32 pb-16 lg:pt-20 lg:pb-0">
           <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
             {/* Left Content */}
             <div className="space-y-8 animate-fade-in text-center lg:text-left lg:pl-12 pt-8 lg:pt-0">
@@ -50,7 +50,7 @@ const Hero = () => {
               {/* Portrait Container */}
               <div className="relative lg:ml-24">
                 {/* Portrait Background */}
-                <div className="w-80 lg:w-96 h-72 lg:h-[28rem] mx-auto bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl shadow-2xl border-4 border-black relative overflow-hidden">
+                <div className="w-80 lg:w-96 h-72 lg:h-[28rem] mx-auto bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl shadow-2xl border-4 border-yellow-600 relative overflow-hidden">
                   {/* Portrait Image */}
                   <img 
                     src="/images/kalyan.png" 

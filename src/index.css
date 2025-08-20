@@ -32,6 +32,21 @@
 
 /* Font Face Declaration */
 @font-face {
+  font-family: 'Didot HTF L24 Light';
+  src: url('/fonts/Didot HTF L24 Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Didot HTF M42 Medium';
+  src: url('/fonts/Didot HTF M42 Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Komrile Condensed';
   src: url('/fonts/Komrile Condensed.otf') format('opentype');
   font-weight: normal;
