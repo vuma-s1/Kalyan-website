@@ -67,6 +67,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Adoreline';
+  src: url('/images/fonts/Adoreline.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Didot HTF L24 Light';
+  src: url('/images/fonts/Didot HTF L24 Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/images/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Hero Background */
 .hero-background {
   background-image: url('/images/herobg.png');

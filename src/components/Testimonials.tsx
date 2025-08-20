@@ -27,23 +27,19 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className="py-8 lg:py-24 relative overflow-hidden" style={{ 
-      backgroundImage: 'url(/images/bg-1.png)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
+      backgroundColor: '#ffe5d4'
     }}>
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-black/30"></div>
+
       <div className="absolute top-20 left-20 w-32 h-32 border border-yellow-400/30 rounded-full opacity-20 animate-float"></div>
       <div className="absolute bottom-20 right-20 w-24 h-24 border border-yellow-400/25 rounded-full opacity-15 animate-float" style={{ animationDelay: '1s' }}></div>
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-4 lg:mb-16">
-                      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed, serif', letterSpacing: '0.05em' }}>
+                      <h2 className="text-4xl lg:text-5xl font-bold mb-2 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Didot HTF L24 Light', letterSpacing: '0.05em', fontWeight: '700', color: '#9b3534' }}>
             What Others Say
           </h2>
-          <p className="text-xl text-yellow-100 max-w-4xl mx-auto leading-relaxed" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+          <p className="text-xl max-w-4xl mx-auto leading-relaxed" style={{ fontFamily: 'Poppins', fontWeight: '400', color: '#9b3534' }}>
             The impact of leadership is best reflected in the voices of those who have worked alongside it. Colleagues, partners and industry peers share their thoughts on Annam Kalyan Srinivas and the values he brings to every role.
           </p>
         </div>
@@ -53,41 +49,42 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="group bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-yellow-200 hover:bg-white hover:shadow-xl transition-all duration-500 hover:-translate-y-1 relative overflow-hidden"
-              style={{ 
-                animationDelay: `${index * 0.15}s`,
+                          className="group backdrop-blur-sm rounded-xl shadow-lg border border-yellow-200 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 relative overflow-hidden"
+            style={{ 
+              backgroundColor: '#ce6f69',
+              animationDelay: `${index * 0.15}s`,
                 padding: '0.75rem'
               }}
             >
               {/* Quote Icon */}
-                              <div className="w-6 h-6 lg:w-8 lg:h-8 rounded-lg flex items-center justify-center mb-2 lg:mb-3 group-hover:scale-110 transition-all duration-500 shadow-md" style={{ backgroundColor: '#1E2531' }}>
+                              <div className="w-6 h-6 lg:w-8 lg:h-8 rounded-lg flex items-center justify-center mb-2 lg:mb-3 group-hover:scale-110 transition-all duration-500 shadow-md" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}>
                 <BiSolidQuoteAltLeft className="w-3 h-3 lg:w-4 lg:h-4 text-white" />
               </div>
               
               {/* Quote Text */}
-              <blockquote className="text-gray-800 leading-relaxed mb-2 lg:mb-3 italic text-xs lg:text-sm" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+              <blockquote className="leading-relaxed mb-2 lg:mb-3 italic text-xs lg:text-sm" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal', color: '#ffe5d4' }}>
                 "{testimonial.quote}"
               </blockquote>
               
               {/* Author Info */}
               <div className="border-t border-yellow-200 pt-1 lg:pt-2">
-                <div className="font-bold text-yellow-700 mb-0 lg:mb-0.5 text-xs lg:text-sm" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                <div className="font-bold mb-0 lg:mb-0.5 text-xs lg:text-sm" style={{ fontFamily: 'FocusGrotesk, sans-serif', color: '#ffe5d4' }}>
                   {testimonial.author}
                 </div>
-                <div className="text-gray-600 text-xs" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+                <div className="text-xs" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal', color: '#ffe5d4' }}>
                   {testimonial.position}
                 </div>
               </div>
 
               {/* Decorative Corner Element */}
-                              <div className="absolute top-0 right-0 w-4 h-4 opacity-20 rounded-bl-xl" style={{ backgroundColor: '#1E2531' }}></div>
+                              <div className="absolute top-0 right-0 w-4 h-4 opacity-20 rounded-bl-xl" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}></div>
             </div>
           ))}
         </div>
 
         {/* Bottom Quote Icon */}
         <div className="text-center mt-8 lg:mt-16">
-                      <div className="inline-flex items-center justify-center w-12 h-12 lg:w-16 lg:h-16 rounded-full shadow-lg" style={{ backgroundColor: '#1E2531' }}>
+                      <div className="inline-flex items-center justify-center w-12 h-12 lg:w-16 lg:h-16 rounded-full shadow-lg" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}>
             <BiSolidQuoteAltRight className="w-6 h-6 lg:w-8 lg:h-8 text-white" />
           </div>
         </div>

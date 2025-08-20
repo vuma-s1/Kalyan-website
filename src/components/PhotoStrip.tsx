@@ -35,20 +35,16 @@ const PhotoStrip = () => {
 
   return (
     <section className="py-6 lg:py-20 relative overflow-hidden" style={{ 
-      backgroundImage: 'url("/images/herobg.png")',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
+      backgroundColor: '#ffe5d4'
     }}>
-      {/* Background Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
+
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center mb-2 lg:mb-16 animate-fade-in">
-                      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed, serif', letterSpacing: '0.05em' }}>
+                      <h2 className="text-4xl lg:text-5xl font-bold mb-2 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Didot HTF L24 Light', letterSpacing: '0.05em', fontWeight: '700', color: '#9b3534' }}>
             In Action
           </h2>
-          <p className="text-xl text-yellow-100 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+          <p className="text-xl drop-shadow-md" style={{ fontFamily: 'Poppins', fontWeight: '400', color: '#9b3534' }}>
             Leadership moments that define a journey
           </p>
         </div>

@@ -8,36 +8,32 @@ const Brands = () => {
       logo: '/images/logo-1.png'
     },
     {
-      name: 'Varamahalakshmi Silks',
+      name: 'Mandir',
       logo: '/images/logo-2.png'
     },
     {
-      name: 'Mandir',
+      name: 'KLM Fashion Mall',
       logo: '/images/logo-3.png'
     },
     {
-      name: 'KLM Fashion Mall',
+      name: 'Vara Mahalakshmi',
       logo: '/images/logo-4.png'
     }
   ];
 
   return (
     <section id="brands" className="py-6 relative overflow-hidden" style={{ 
-      backgroundImage: 'url(/images/bg-1.png)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
+      backgroundColor: '#ffe5d4'
     }}>
-      {/* Background Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
+
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-3 drop-shadow-lg" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-3 drop-shadow-lg" style={{ fontFamily: 'Didot HTF L24 Light', fontWeight: '700', color: '#9b3534' }}>
             The Brands I Lead
           </h2>
-          <p className="text-xl text-yellow-100 max-w-2xl mx-auto drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+          <p className="text-xl max-w-2xl mx-auto drop-shadow-md" style={{ fontFamily: 'Poppins', fontWeight: '400', color: '#9b3534' }}>
             From traditional silk showrooms to modern fashion retail, each brand under SSKL reflects a commitment to quality, authenticity, and customer trust.
           </p>
         </div>
@@ -61,7 +57,7 @@ const Brands = () => {
                 </div>
                   
                 {/* Brand Name */}
-                <h3 className="text-sm sm:text-base lg:text-lg font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                <h3 className="text-sm sm:text-base lg:text-lg font-bold mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', color: '#9b3534' }}>
                   {brand.name}
                 </h3>
               </div>
@@ -83,7 +79,7 @@ const Brands = () => {
                 </div>
                   
                 {/* Brand Name */}
-                <h3 className="text-sm sm:text-base lg:text-lg font-bold text-white mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                <h3 className="text-sm sm:text-base lg:text-lg font-bold mb-2 drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', color: '#9b3534' }}>
                   {brand.name}
                 </h3>
               </div>

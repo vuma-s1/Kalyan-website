@@ -35,11 +35,11 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
       <div className="container mx-auto px-4 mt-4">
         {/* Card-style Navigation Bar */}
-        <div className="relative bg-yellow-200/80 rounded-xl shadow-lg border border-yellow-400/30 backdrop-blur-sm">
+        <div className="relative rounded-xl shadow-lg border border-yellow-400/30 backdrop-blur-sm" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}>
           {/* Logo is now outside the flex container to not affect its height */}
           <a href="#home" className={`group ${isMenuOpen ? 'lg:block hidden' : 'block'}`}>
             <img 
-              src="/images/logo.png" 
+              src="/images/logo main.png" 
               alt="AJKS Logo" 
               className="absolute top-1/2 -translate-y-1/2 left-4 lg:left-8 w-20 h-20 lg:w-24 lg:h-24 object-contain hover:scale-105 transition-all duration-300 z-10"
               style={{ transform: 'translateY(-45%)' }}
@@ -58,8 +58,8 @@ const Header = () => {
                   href={item.href}
                   className={`font-medium text-sm transition-all duration-300 ${
                     item.name === 'Home' 
-                      ? 'bg-gray-900 text-yellow-200 px-4 py-2 rounded-lg shadow-sm' 
-                      : 'text-gray-900 hover:text-gray-700'
+                      ? 'text-white px-4 py-2 rounded-lg shadow-sm' 
+                      : 'text-white hover:text-yellow-200'
                   }`}
                 >
                   {item.name}
@@ -72,7 +72,7 @@ const Header = () => {
               {/* Contact Button */}
               <button
                 onClick={scrollToContact}
-                className="hidden md:flex items-center space-x-2 px-4 py-2 bg-gray-900 text-yellow-200 hover:bg-gray-800 transition-all duration-300 font-medium rounded-lg shadow-sm"
+                className="hidden md:flex items-center space-x-2 px-4 py-2 text-white hover:text-yellow-200 transition-all duration-300 font-medium rounded-lg shadow-sm"
               >
                 <FiPhone className="w-4 h-4" />
                 <span>Contact Us</span>
@@ -81,7 +81,7 @@ const Header = () => {
               {/* Mobile Menu Toggle */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="lg:hidden w-8 h-8 flex items-center justify-center transition-colors duration-300 text-gray-900 hover:text-gray-700"
+                className="lg:hidden w-8 h-8 flex items-center justify-center transition-colors duration-300 text-white hover:text-yellow-200"
               >
                 {isMenuOpen ? <FiX className="w-5 h-5" /> : <FiMenu className="w-5 h-5" />}
               </button>
@@ -101,8 +101,8 @@ const Header = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className={`font-medium py-2 px-3 rounded-lg transition-all duration-300 text-sm ${
                       item.name === 'Home'
-                        ? 'bg-gray-900 text-yellow-200'
-                        : 'text-gray-900 hover:text-gray-700 hover:bg-yellow-300/20'
+                        ? 'text-white'
+                        : 'text-white hover:text-yellow-200 hover:bg-white/10'
                     }`}
                   >
                     {item.name}
@@ -113,7 +113,7 @@ const Header = () => {
                     scrollToContact();
                     setIsMenuOpen(false);
                   }}
-                  className="flex items-center space-x-2 px-4 py-2 bg-gray-900 text-yellow-200 hover:bg-gray-800 transition-all duration-300 font-medium rounded-lg mt-2 self-start"
+                  className="flex items-center space-x-2 px-4 py-2 text-white hover:text-yellow-200 transition-all duration-300 font-medium rounded-lg mt-2 self-start"
                 >
                   <FiPhone className="w-4 h-4" />
                   <span>Contact Us</span>

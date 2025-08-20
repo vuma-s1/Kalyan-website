@@ -44,7 +44,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-8 lg:py-20" style={{ backgroundColor: '#fbe9b7' }}>
+    <section id="contact" className="py-8 lg:py-20" style={{ backgroundColor: '#ffe5d4' }}>
       <div className="container mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-8 lg:mb-16">
@@ -66,7 +66,7 @@ const Contact = () => {
                   key={index}
                   className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg border border-yellow-100 hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#1E2531' }}>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -153,7 +153,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   className="w-full text-white py-4 px-8 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 uppercase tracking-wide"
-                  style={{ backgroundColor: '#1E2531' }}
+                  style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}
                 >
                   Send Message
                 </button>

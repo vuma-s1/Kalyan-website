@@ -25,23 +25,19 @@ const MediaRecognition = () => {
 
   return (
     <section id="media-recognition" className="py-8 lg:py-24 relative overflow-hidden" style={{ 
-      backgroundImage: 'url(/images/herobg.png)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
+      backgroundColor: '#ffe5d4'
     }}>
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-black/30"></div>
+
       <div className="absolute top-10 left-10 w-20 h-20 border-2 border-yellow-400/40 rounded-full opacity-30"></div>
       <div className="absolute bottom-10 right-10 w-16 h-16 border-2 border-yellow-400/30 rounded-full opacity-25"></div>
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-4 lg:mb-8 animate-fade-in">
-                                             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-2 lg:mb-4 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed, serif', letterSpacing: '0.05em' }}>
+                                                       <h2 className="text-4xl lg:text-5xl font-bold mb-2 lg:mb-4 drop-shadow-lg" style={{ fontFamily: 'Didot HTF L24 Light', letterSpacing: '0.05em', fontWeight: '700', color: '#9b3534' }}>
             Recognised for My Work
           </h2>
-          <p className="text-xl text-yellow-100 max-w-3xl mx-auto leading-relaxed drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+          <p className="text-xl max-w-3xl mx-auto leading-relaxed drop-shadow-md" style={{ fontFamily: 'Poppins', fontWeight: '400', color: '#9b3534' }}>
             Proud to be appointed to national and state boards, and featured in media for contributions to retail and cultural preservation.
           </p>
         </div>
@@ -53,31 +49,31 @@ const MediaRecognition = () => {
             return (
               <div 
                 key={index}
-                className="group bg-white rounded-2xl shadow-xl border border-yellow-200 p-4 lg:p-8 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
-                style={{ animationDelay: `${index * 0.2}s` }}
+                className="group rounded-2xl shadow-xl border border-yellow-200 p-4 lg:p-8 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
+                style={{ backgroundColor: '#ce6f69', animationDelay: `${index * 0.2}s` }}
               >
                 {/* Icon */}
-                <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center mx-auto mb-3 lg:mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#1E2531' }}>
-                  <IconComponent className="w-7 h-7 lg:w-10 lg:h-10 text-white" />
+                <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center mx-auto mb-3 lg:mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}>
+                  <IconComponent className="w-7 h-7 lg:w-10 lg:h-10" style={{ color: '#ffe5d4' }} />
                 </div>
                 
                 {/* Year Badge */}
-                <div className="inline-block px-2 py-1 lg:px-4 lg:py-2 text-white text-xs lg:text-sm font-bold rounded-full mb-2 lg:mb-4 shadow-md" style={{ backgroundColor: '#1E2531' }}>
+                <div className="inline-block px-2 py-1 lg:px-4 lg:py-2 text-white text-xs lg:text-sm font-bold rounded-full mb-2 lg:mb-4 shadow-md" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}>
                   {recognition.year}
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-base lg:text-xl font-bold text-gray-800 mb-2 lg:mb-4" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                <h3 className="text-base lg:text-xl font-bold mb-2 lg:mb-4" style={{ fontFamily: 'FocusGrotesk, sans-serif', color: '#ffe5d4' }}>
                   {recognition.title}
                 </h3>
                 
                 {/* Description */}
-                <p className="text-gray-700 leading-relaxed text-xs lg:text-base" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+                <p className="leading-relaxed text-xs lg:text-base" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal', color: '#ffe5d4' }}>
                   {recognition.description}
                 </p>
 
                 {/* Decorative Corner Element */}
-                <div className="absolute top-0 right-0 w-8 h-8 opacity-20 rounded-bl-2xl" style={{ backgroundColor: '#1E2531' }}></div>
+                <div className="absolute top-0 right-0 w-8 h-8 opacity-20 rounded-bl-2xl" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}></div>
               </div>
             );
           })}

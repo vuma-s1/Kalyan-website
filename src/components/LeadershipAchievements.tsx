@@ -22,21 +22,17 @@ const LeadershipAchievements = () => {
 
   return (
     <section id="leadership-achievements" className="py-8 lg:py-24 relative overflow-hidden" style={{ 
-      backgroundImage: 'url("/images/bg-1.png")',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
+      backgroundColor: '#ffe5d4'
     }}>
-      {/* Background Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
+
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-8 lg:mb-16">
-                      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-3 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Komrile Condensed, serif', letterSpacing: '0.05em' }}>
+                      <h2 className="text-4xl lg:text-5xl font-bold mb-3 lg:mb-6 drop-shadow-lg" style={{ fontFamily: 'Didot HTF L24 Light', letterSpacing: '0.05em', fontWeight: '700', color: '#9b3534' }}>
             Turning Vision into Measurable Success
           </h2>
-          <p className="text-xl text-yellow-100 max-w-3xl mx-auto drop-shadow-md" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+          <p className="text-xl max-w-3xl mx-auto drop-shadow-md" style={{ fontFamily: 'Poppins', fontWeight: '400', color: '#9b3534' }}>
             From expanding markets to transforming operations, every achievement reflects strategic thinking and a commitment to excellence.
           </p>
         </div>
@@ -48,26 +44,26 @@ const LeadershipAchievements = () => {
             return (
                              <div 
                  key={index}
-                 className="group bg-white rounded-2xl shadow-xl border border-yellow-200 p-6 lg:p-8 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
-                 style={{ animationDelay: `${index * 0.2}s` }}
+                                 className="group rounded-2xl shadow-xl border border-yellow-200 p-6 lg:p-8 text-center hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 animate-fade-in-up relative overflow-hidden"
+                style={{ backgroundColor: '#ce6f69', animationDelay: `${index * 0.2}s` }}
                >
                  {/* Icon */}
-                 <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 lg:mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: '#1E2531' }}>
-                   <IconComponent className="w-8 h-8 lg:w-10 lg:h-10 text-white" />
+                 <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 lg:mb-6 group-hover:scale-110 transition-all duration-500 shadow-lg" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}>
+                   <IconComponent className="w-8 h-8 lg:w-10 lg:h-10" style={{ color: '#ffe5d4' }} />
                  </div>
                  
                  {/* Title */}
-                 <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-3 lg:mb-4" style={{ fontFamily: 'FocusGrotesk, sans-serif' }}>
+                 <h3 className="text-xl lg:text-2xl font-bold mb-3 lg:mb-4" style={{ fontFamily: 'FocusGrotesk, sans-serif', color: '#ffe5d4' }}>
                    {achievement.title}
                  </h3>
                 
                 {/* Description */}
-                <p className="text-gray-700 leading-relaxed" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal' }}>
+                <p className="leading-relaxed" style={{ fontFamily: 'FocusGrotesk, sans-serif', fontWeight: 'normal', color: '#ffe5d4' }}>
                   {achievement.description}
                 </p>
 
                 {/* Decorative Corner Element */}
-                <div className="absolute top-0 right-0 w-8 h-8 opacity-20 rounded-bl-2xl" style={{ backgroundColor: '#1E2531' }}></div>
+                <div className="absolute top-0 right-0 w-8 h-8 opacity-20 rounded-bl-2xl" style={{ backgroundColor: 'rgba(155, 53, 52, 0.85)' }}></div>
               </div>
             );
           })}
