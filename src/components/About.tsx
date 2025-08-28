@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="pt-4 pb-16 lg:py-24 relative overflow-hidden" style={{ 
+    <section id="about" className="py-16 lg:py-24 relative overflow-hidden" style={{ 
       backgroundColor: '#ffe5d4'
     }}>
 
@@ -15,7 +15,7 @@ const About = () => {
 
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-8 animate-fade-in">
+        <div className="text-center mb-8 animate-fade-in -mt-24">
                       <h2 className="text-4xl lg:text-5xl font-bold mb-4 drop-shadow-lg" style={{ fontFamily: 'Didot HTF L24 Light', letterSpacing: '0.05em', fontWeight: '700', color: '#9b3534' }}>
             From Vijayawada to the Boardroom
           </h2>

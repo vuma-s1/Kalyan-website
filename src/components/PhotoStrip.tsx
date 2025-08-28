@@ -5,24 +5,24 @@ const PhotoStrip = () => {
   
   const photos = [
     { 
-      src: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      caption: "Reviewing store designs" 
+      src: "/images/Kalamandir 11th anniversary (52).JPG", 
+      caption: "Kalamandir 11th Anniversary Celebration" 
     },
     { 
-      src: "https://images.pexels.com/photos/2834917/pexels-photo-2834917.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      caption: "Speaking at retail events" 
+      src: "/images/image3.png", 
+      caption: "Kalamandir Foundation Event - Public Address" 
     },
     { 
-      src: "https://images.pexels.com/photos/3182834/pexels-photo-3182834.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      caption: "CSR work with Kalamandir Foundation" 
+      src: "/images/teambanner-img.jpg", 
+      caption: "SSKL Leadership Team - A Brand of Sai Silks (Kalamandir) Limited" 
     },
     { 
-      src: "https://images.pexels.com/photos/3184355/pexels-photo-3184355.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      caption: "Early career study moments" 
+      src: "/images/WhatsApp Image 2025-08-28 at 13.58.12_4dc2a8e5.jpg", 
+      caption: "SFA Social Media Awards - 7th Edition Recognition" 
     },
     { 
-      src: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800", 
-      caption: "Meeting teams on the shop floor" 
+      src: "/images/20240905_213252_0000.jpg", 
+      caption: "Traditional Indian Textile Showroom - Cultural Heritage Celebration" 
     }
   ];
 
@@ -59,7 +59,10 @@ const PhotoStrip = () => {
                 <img 
                   src={photo.src} 
                   alt={photo.caption}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
+                  style={{ 
+                    objectPosition: index === 0 ? 'center 25%' : index === 1 ? 'center 20%' : index === 2 ? 'center 35%' : index === 3 ? 'center 25%' : index === 4 ? 'center 30%' : 'center center' 
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-8">
