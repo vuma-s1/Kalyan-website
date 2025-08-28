@@ -26,16 +26,24 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden" style={{ backgroundColor: '#9b3534' }}>
+    <footer className="relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: 'url("/images/footer bg .jpg")',
+          backgroundColor: '#9b3534'
+        }}
+      ></div>
       {/* Background Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>
       
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="py-8 lg:py-12">
+        <div className="py-6 lg:py-8">
           {/* Call-to-Action - Now at Top */}
-          <div className="text-center mb-8 lg:mb-12">
+          <div className="text-center mb-6 lg:mb-8">
             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2 lg:mb-3 font-serif">Ready to Connect?</h3>
-            <p className="text-white mb-4 max-w-2xl mx-auto text-sm lg:text-base">
+            <p className="text-white mb-3 max-w-2xl mx-auto text-sm lg:text-base">
               For collaborations, speaking engagements, or professional discussions about retail leadership and strategic growth.
             </p>
             <button
@@ -48,7 +56,7 @@ const Footer = () => {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             {/* Quick Navigation */}
             <div>
               <h4 className="text-lg font-bold text-white mb-4 font-serif">Quick Navigation</h4>
@@ -90,7 +98,7 @@ const Footer = () => {
                 </div>
               </div>
               <p className="text-white leading-relaxed mb-4 text-sm lg:text-base">
-                Annam Kalyan Srinivas — Leading Sai Silks (Kalamandir) Limited with vision, discipline, and impact.
+                Annam Kalyan Srinivas Leading Sai Silks (Kalamandir) Limited with vision, discipline, and strategic impact.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1 sm:space-y-0 text-sm text-white">
                 <span>📞 +91 98855 21122</span>
@@ -101,7 +109,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-4 lg:py-6 border-t border-gray-700">
+        <div className="py-3 lg:py-4 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-white text-xs lg:text-sm mb-3 md:mb-0 text-center md:text-left">
               © 2024 Annam Kalyan Srinivas. All rights reserved.
